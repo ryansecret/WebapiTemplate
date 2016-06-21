@@ -1,0 +1,13 @@
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Application.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Application.pdb
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Model.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Repository.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Model.pdb
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Repository.pdb
+G:\新项目\WebapiTemplate\Ryan.Application\obj\Debug\Ryan.Application.csprojResolveAssemblyReference.cache
+G:\新项目\WebapiTemplate\Ryan.Application\obj\Debug\Ryan.Application.dll
+G:\新项目\WebapiTemplate\Ryan.Application\obj\Debug\Ryan.Application.pdb
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Autofac.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Core.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Core.pdb
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Autofac.xml

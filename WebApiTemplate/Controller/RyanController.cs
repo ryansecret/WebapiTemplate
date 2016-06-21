@@ -1,13 +1,22 @@
-﻿using System.Web.Http;
+﻿using System.Net.Http;
+using System.Web.Http;
+using System.Web.Http.Hosting;
+using Autofac.Integration.Owin;
+using Ryan.Application;
 
-namespace WebApiTemplate.Controller
+namespace Ryan.Controller
 {
     public class RyanController:ApiController
     {
+        private RyanApplication _ryanApplication;
+        public RyanController(RyanApplication ryanApplication)
+        {
+            _ryanApplication = ryanApplication;
+        }
         [HttpGet]
         public IHttpActionResult Hello()
         {
-            return Json("Hello from ryan");
+            return Json(_ryanApplication.Hello());
         }
     }
 }

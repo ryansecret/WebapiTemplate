@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTemplate", "WebApiTemplate\WebApiTemplate.csproj", "{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan", "WebApiTemplate\Ryan.csproj", "{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Model", "Ryan.Model\Ryan.Model.csproj", "{1768DB3D-1D73-4FFA-B459-0134E8D6F638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Repository", "Ryan.Repository\Ryan.Repository.csproj", "{94247A44-7CCF-490A-9E20-084406B751C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Application", "Ryan.Application\Ryan.Application.csproj", "{7541875B-06D6-43B0-8413-6F959CC53C3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Engine", "Ryan.Core\Ryan.Engine.csproj", "{29FED1F0-CB09-4116-8961-D1EDA6481E7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94247A44-7CCF-490A-9E20-084406B751C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94247A44-7CCF-490A-9E20-084406B751C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94247A44-7CCF-490A-9E20-084406B751C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94247A44-7CCF-490A-9E20-084406B751C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7541875B-06D6-43B0-8413-6F959CC53C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7541875B-06D6-43B0-8413-6F959CC53C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7541875B-06D6-43B0-8413-6F959CC53C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7541875B-06D6-43B0-8413-6F959CC53C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FED1F0-CB09-4116-8961-D1EDA6481E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FED1F0-CB09-4116-8961-D1EDA6481E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FED1F0-CB09-4116-8961-D1EDA6481E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FED1F0-CB09-4116-8961-D1EDA6481E7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
