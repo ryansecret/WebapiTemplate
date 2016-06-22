@@ -5,6 +5,8 @@ using Autofac.Extras.CommonServiceLocator;
 using Autofac.Integration.WebApi;
 using Microsoft.Practices.ServiceLocation;
 using Owin;
+using Ryan.Core;
+
 
 namespace Ryan
 {

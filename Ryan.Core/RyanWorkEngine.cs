@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Ryan.Core;
+using Daisy.Core;
 
-namespace Ryan
+namespace Ryan.Core
 {
     public class RyanWorkEngine : WorkEngine
     {

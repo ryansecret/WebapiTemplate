@@ -3,6 +3,7 @@
 #endregion
 
 using Autofac;
+using Daisy.Core;
 
 namespace Ryan.Core.DependencyManagement
 {
