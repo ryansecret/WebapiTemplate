@@ -1,4 +1,4 @@
-G:\新项目\WebapiTemplate\Ryan.Model\bin\Debug\Ryan.Model.dll
-G:\新项目\WebapiTemplate\Ryan.Model\bin\Debug\Ryan.Model.pdb
 G:\新项目\WebapiTemplate\Ryan.Model\obj\Debug\Ryan.Model.dll
 G:\新项目\WebapiTemplate\Ryan.Model\obj\Debug\Ryan.Model.pdb
+G:\新项目\WebapiTemplate\Ryan.Model\bin\Ryan.Model.dll
+G:\新项目\WebapiTemplate\Ryan.Model\bin\Ryan.Model.pdb

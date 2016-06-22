@@ -44,13 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="RyanApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ryan.Core\Ryan.Engine.csproj">
+    <ProjectReference Include="..\Ryan.Core\Ryan.Core.csproj">
       <Project>{29fed1f0-cb09-4116-8961-d1eda6481e7b}</Project>
-      <Name>Ryan.Engine</Name>
+      <Name>Ryan.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ryan.Model\Ryan.Model.csproj">
       <Project>{1768DB3D-1D73-4FFA-B459-0134E8D6F638}</Project>

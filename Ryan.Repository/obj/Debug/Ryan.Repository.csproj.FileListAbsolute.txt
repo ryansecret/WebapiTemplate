@@ -1,7 +1,7 @@
-G:\新项目\WebapiTemplate\Ryan.Repository\bin\Debug\Ryan.Repository.dll
-G:\新项目\WebapiTemplate\Ryan.Repository\bin\Debug\Ryan.Repository.pdb
-G:\新项目\WebapiTemplate\Ryan.Repository\bin\Debug\Ryan.Model.dll
-G:\新项目\WebapiTemplate\Ryan.Repository\bin\Debug\Ryan.Model.pdb
 G:\新项目\WebapiTemplate\Ryan.Repository\obj\Debug\Ryan.Repository.csprojResolveAssemblyReference.cache
 G:\新项目\WebapiTemplate\Ryan.Repository\obj\Debug\Ryan.Repository.dll
 G:\新项目\WebapiTemplate\Ryan.Repository\obj\Debug\Ryan.Repository.pdb
+G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Repository.dll
+G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Repository.pdb
+G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Model.dll
+G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Model.pdb
