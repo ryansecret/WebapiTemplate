@@ -35,3 +35,9 @@ G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Autofac.Integration.Owin.dl
 G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Ryan.Core.dll
 G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Ryan.Core.pdb
 G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Autofac.Integration.Owin.xml
+G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Autofac.Extras.CommonServiceLocator.dll
+G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Daisy.Core.dll
+G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Autofac.Extras.CommonServiceLocator.xml
+G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\新项目\WebapiTemplate\WebApiTemplate\bin\Debug\Microsoft.Practices.ServiceLocation.xml
