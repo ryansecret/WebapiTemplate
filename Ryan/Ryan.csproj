@@ -53,6 +53,10 @@
       <HintPath>..\packages\DaisyCore.1.3.0\lib\Daisy.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
       <Private>True</Private>
@@ -100,6 +104,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\Startup.Register.cs" />
     <Compile Include="Controller\RyanController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +112,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\ConfigFiles\Public\Log4Net.config">
+      <Link>Log4Net.config</Link>
+    </None>
     <None Include="App.config" />
     <None Include="AppSettings.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -132,7 +140,8 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy  $(ProjectDir)..\Ryan.Repository\bin\Ryan.Repository.dll  $(TargetDir) /i/y
-xcopy  $(ProjectDir)..\Ryan.Model\bin\Ryan.Model.dll  $(TargetDir) /i/y</PostBuildEvent>
+xcopy  $(ProjectDir)..\Ryan.Model\bin\Ryan.Model.dll  $(TargetDir) /i/y
+xcopy  $(ProjectDir)..\ConfigFiles\public\*.* $(TargetDir) /i/y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Daisy.Core;
+using LibLog.Example.Library.Logging;
 
 namespace Ryan.Core
 {
@@ -15,6 +16,8 @@ namespace Ryan.Core
         public override void RegisterDependencies()
         {
             var builder = new ContainerBuilder();
+            builder.RegisterInstance(LogProvider.GetLogger("Logger_Error")).Named<ILog>("Error").SingleInstance();
+            builder.RegisterInstance(LogProvider.GetLogger("Logger_Info")).Named<ILog>("Info").SingleInstance();
 
             builder.RegisterType<WebAppTypeFinder>().As<ITypeFinder>().SingleInstance();
             builder.Update(_containerManager);
