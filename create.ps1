@@ -12,7 +12,7 @@ if([System.String]::IsNullOrWhiteSpace($NewProjectName)){
 cd projects;
 New-Item -ItemType Directory -Name $NewProjectName;
 cd ..
-Copy-Item -Path .\base\$ProjectDemo\ETao.Menu\* -Destination .\projects\$NewProjectName -Recurse; 
+Copy-Item -Path .\base\$ProjectDemo\Ryan\* -Destination .\projects\$NewProjectName -Recurse; 
 
 cd projects\$NewProjectName;
 
@@ -22,7 +22,7 @@ $files = [System.IO.Directory]::GetFiles($location.ToString(),"*.cs",[System.IO.
 foreach($file in $files)
 {
     $content = Get-Content $file;
-    $content = $content.Replace("ETao.Menu",$NewProjectName); 
+    $content = $content.Replace("Ryan",$NewProjectName); 
     Set-Content -Path $file $content -Encoding UTF8;
 }
 
@@ -30,32 +30,32 @@ $csprojfiles = [System.IO.Directory]::GetFiles($location,"*.csproj",[System.IO.S
 foreach($file in $csprojfiles)
 {
     $content = Get-Content $file;
-    $content = $content.Replace("ETao.Menu",$NewProjectName); 
+    $content = $content.Replace("Ryan",$NewProjectName); 
     Set-Content -Path $file $content -Encoding UTF8;
 }
 
-$directories = [System.IO.Directory]::GetDirectories($location,"ETao.Menu*");
+$directories = [System.IO.Directory]::GetDirectories($location,"Ryan*");
 foreach($dir in $directories)
 {
-    $newdir = $dir.Replace("ETao.Menu",$NewProjectName);
+    $newdir = $dir.Replace("Ryan",$NewProjectName);
 
     write $newdir;
     write $dir;
     [System.IO.Directory]::Move($dir,$newdir);
 }
-$csprojfiles = [System.IO.Directory]::GetFiles($location,"ETao.Menu*.csproj",[System.IO.SearchOption]::AllDirectories);
+$csprojfiles = [System.IO.Directory]::GetFiles($location,"Ryan*.csproj",[System.IO.SearchOption]::AllDirectories);
 foreach($file in $csprojfiles)
 {
-    $newfile = $file.Replace("ETao.Menu",$NewProjectName);
+    $newfile = $file.Replace("Ryan",$NewProjectName);
     [System.IO.File]::Move($file,$newfile);
 }
 
-$sln = [System.IO.Directory]::GetFiles($location,"ETao.Menu.sln")[0];
+$sln = [System.IO.Directory]::GetFiles($location,"Ryan.sln")[0];
 $content = Get-Content $sln;
-$content = $content.Replace("ETao.Menu",$NewProjectName);
+$content = $content.Replace("Ryan",$NewProjectName);
 Set-Content -Path $sln $content  -Encoding UTF8;
 
-$newsln = $sln.Replace("ETao.Menu",$NewProjectName);
+$newsln = $sln.Replace("Ryan",$NewProjectName);
 [System.IO.File]::Move($sln,$newsln);
 
 cd ..\..\
