@@ -20,7 +20,7 @@ namespace Ryan.Controller
         [HttpGet]
         public IHttpActionResult Hello()
         {
-          
+            
             return Json(_ryanApplication.Hello());
         }
     }

@@ -142,7 +142,9 @@
       <Name>Ryan.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="README.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy  $(ProjectDir)..\Ryan.Repository\bin\Ryan.Repository.dll  $(TargetDir) /i/y

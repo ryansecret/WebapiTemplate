@@ -20,3 +20,5 @@ G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Castle.Core.dll
 G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Castle.Core.xml
 G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Autofac.Extras.DynamicProxy2.dll
 G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Autofac.Extras.DynamicProxy2.xml
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\AutoMapper.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\AutoMapper.xml
