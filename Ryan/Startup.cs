@@ -1,6 +1,7 @@
 ﻿using System.Web.Http;
 using Owin;
 using Ryan.Core.Log;
+using Ryan.Utility;
 
 namespace Ryan
 {
@@ -10,7 +11,7 @@ namespace Ryan
         {
             var config = new HttpConfiguration();
 
-
+            config.Filters.Add(new ErrorAttribute());
             WebApiConfig.Register(config);
             ContainerRegister(config, app);
             app.UseWebApi(config);

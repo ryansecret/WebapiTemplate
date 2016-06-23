@@ -14,7 +14,7 @@ namespace Ryan.Core.Log
 
         public static void LogInfo(this string info)
         {
-            ServiceLocator.Current.GetInstance<ILog>("Info").Error(info);
+            ServiceLocator.Current.GetInstance<ILog>("Info").Info(info);
         }
     }
 

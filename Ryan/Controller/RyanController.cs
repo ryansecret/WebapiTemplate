@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Net.Http;
+using System.Web.Http;
 using Autofac.Extras.DynamicProxy2;
 using Autofac.Integration.WebApi;
 using Microsoft.Practices.ServiceLocation;
@@ -16,11 +18,11 @@ namespace Ryan.Controller
         {
             _ryanApplication = ryanApplication;
         }
-
+        
         [HttpGet]
         public IHttpActionResult Hello()
         {
-            
+           
             return Json(_ryanApplication.Hello());
         }
     }
