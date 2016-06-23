@@ -8,4 +8,7 @@ obj
 
 .vs
 packages
-*/bin/
+*/bin
+
+*.dll
+*.pdb
