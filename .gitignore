@@ -5,10 +5,7 @@ obj
 *.suo
 *.orig 
 /*/bin
-
 .vs
 packages
 */bin
-
-*.dll
 *.pdb
