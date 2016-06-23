@@ -1,10 +1,11 @@
-﻿Log
+Log
 bin
 obj
 *.user
 *.suo
 *.orig 
 /*/bin
-*/bin
+
 .vs
 packages
+*/bin/
