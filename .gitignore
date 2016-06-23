@@ -4,8 +4,7 @@ obj
 *.user
 *.suo
 *.orig 
-/*/bin
+
 .vs
 packages
-*/bin
-*.pdb
+ 
