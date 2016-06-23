@@ -1,7 +1,8 @@
 ﻿using Autofac.Extras.DynamicProxy2;
 using Ryan.Application.Models.Converter;
 using Ryan.Core.Intercepters;
-using Ryan.Model;
+using Ryan.DomainModel;
+using Ryan.DomainModel.Ryan;
 
 namespace Ryan.Application
 {

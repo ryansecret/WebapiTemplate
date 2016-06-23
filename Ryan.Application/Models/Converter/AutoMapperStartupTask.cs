@@ -1,7 +1,8 @@
 ﻿using System.Security;
 using AutoMapper;
 using Daisy.Core;
-using Ryan.Model;
+using Ryan.DomainModel;
+using Ryan.DomainModel.Ryan;
 
 namespace Ryan.Application.Models.Converter
 {
@@ -11,7 +12,7 @@ namespace Ryan.Application.Models.Converter
         {
              Mapper.Initialize(cg =>
              {
-                 cg.CreateMap<BallEntity, Ball>();
+                 cg.CreateMap<BallEntity, Ball>().ForMember(d=>d.Name,s=>s.MapFrom(d=>d.Name.TrimEnd()));
                  cg.CreateMap<Ball, BallEntity>();
 
              });

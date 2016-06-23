@@ -38,12 +38,16 @@
       <HintPath>..\packages\FluentAssertions.4.9.0\lib\net45\FluentAssertions.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NSubstitute, Version=1.10.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
       <HintPath>..\packages\NSubstitute.1.10.0.0\lib\net45\NSubstitute.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.1.12217, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -56,11 +60,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Model\Ball.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ryan.Application\Ryan.Application.csproj">
+      <Project>{7541875b-06d6-43b0-8413-6f959cc53c3d}</Project>
+      <Name>Ryan.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ryan.Core\Ryan.Core.csproj">
+      <Project>{29fed1f0-cb09-4116-8961-d1eda6481e7b}</Project>
+      <Name>Ryan.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ryan.Model\Ryan.DomainModel.csproj">
+      <Project>{1768db3d-1d73-4ffa-b459-0134e8d6f638}</Project>
+      <Name>Ryan.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ryan.Repository\Ryan.Repository.csproj">
+      <Project>{94247a44-7ccf-490a-9e20-084406b751c8}</Project>
+      <Name>Ryan.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

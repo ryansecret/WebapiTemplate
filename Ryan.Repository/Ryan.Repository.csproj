@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ryan.Model\Ryan.Model.csproj">
+    <ProjectReference Include="..\Ryan.Model\Ryan.DomainModel.csproj">
       <Project>{1768db3d-1d73-4ffa-b459-0134e8d6f638}</Project>
-      <Name>Ryan.Model</Name>
+      <Name>Ryan.DomainModel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

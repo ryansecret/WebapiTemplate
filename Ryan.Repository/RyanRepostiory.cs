@@ -1,4 +1,5 @@
-﻿using Ryan.Model;
+﻿using Ryan.DomainModel;
+using Ryan.DomainModel.Ryan;
 
 namespace Ryan.Repository
 {

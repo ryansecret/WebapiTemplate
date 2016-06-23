@@ -66,7 +66,7 @@
   <ItemGroup>
     <Compile Include="Models\Ball.cs" />
     <Compile Include="Models\Converter\AutoMapperStartupTask.cs" />
-    <Compile Include="Models\Converter\Converters.cs" />
+    <Compile Include="Models\Converter\ModelConverters.cs" />
     <Compile Include="RyanApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,9 +75,9 @@
       <Project>{29fed1f0-cb09-4116-8961-d1eda6481e7b}</Project>
       <Name>Ryan.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ryan.Model\Ryan.Model.csproj">
+    <ProjectReference Include="..\Ryan.Model\Ryan.DomainModel.csproj">
       <Project>{1768DB3D-1D73-4FFA-B459-0134E8D6F638}</Project>
-      <Name>Ryan.Model</Name>
+      <Name>Ryan.DomainModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ryan.Repository\Ryan.Repository.csproj">
       <Project>{94247a44-7ccf-490a-9e20-084406b751c8}</Project>

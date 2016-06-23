@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan", "Ryan\Ryan.csproj", "{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Model", "Ryan.Model\Ryan.Model.csproj", "{1768DB3D-1D73-4FFA-B459-0134E8D6F638}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.DomainModel", "Ryan.Model\Ryan.DomainModel.csproj", "{1768DB3D-1D73-4FFA-B459-0134E8D6F638}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Repository", "Ryan.Repository\Ryan.Repository.csproj", "{94247A44-7CCF-490A-9E20-084406B751C8}"
 EndProject

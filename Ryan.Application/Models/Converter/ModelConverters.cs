@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
-using Ryan.Model;
+using Ryan.DomainModel;
+using Ryan.DomainModel.Ryan;
 
 namespace Ryan.Application.Models.Converter
 {
-    public static class Converters
+    public static class ModelConverters
     {
         public static Ball ToBall(this BallEntity model)
         {
