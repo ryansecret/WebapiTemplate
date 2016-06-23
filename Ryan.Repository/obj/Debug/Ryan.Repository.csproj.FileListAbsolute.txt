@@ -5,3 +5,4 @@ G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Repository.dll
 G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Repository.pdb
 G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Model.dll
 G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Model.pdb
+G:\新项目\WebapiTemplate\Ryan.Repository\bin\Ryan.Repository.dll.config

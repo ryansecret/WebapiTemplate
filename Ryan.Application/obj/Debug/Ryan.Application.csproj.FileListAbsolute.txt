@@ -15,3 +15,8 @@ G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Microsoft.Practices.Servi
 G:\新项目\WebapiTemplate\Ryan.Application\obj\Debug\Ryan.Application.csprojResolveAssemblyReference.cache
 G:\新项目\WebapiTemplate\Ryan.Application\obj\Debug\Ryan.Application.dll
 G:\新项目\WebapiTemplate\Ryan.Application\obj\Debug\Ryan.Application.pdb
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Ryan.Application.dll.config
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Castle.Core.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Castle.Core.xml
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Autofac.Extras.DynamicProxy2.dll
+G:\新项目\WebapiTemplate\Ryan.Application\bin\Debug\Autofac.Extras.DynamicProxy2.xml

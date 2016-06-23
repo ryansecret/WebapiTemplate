@@ -1,7 +1,10 @@
-﻿using Ryan.Model;
+﻿using Autofac.Extras.DynamicProxy2;
+using Ryan.Core.Intercepters;
+using Ryan.Model;
 
 namespace Ryan.Application
 {
+    [Intercept(typeof(LogIntercepter))]
     public class RyanApplication
     {
         private readonly IRyanRepository _ryanRepository;
@@ -11,9 +14,10 @@ namespace Ryan.Application
             _ryanRepository = ryanRepository;
         }
 
-        public string Hello()
+        public virtual string Hello()
         {
             return _ryanRepository.Hello();
         }
     }
+   
 }

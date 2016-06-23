@@ -1,6 +1,8 @@
 ﻿using Autofac;
+using Autofac.Extras.DynamicProxy2;
 using Daisy.Core;
 using LibLog.Example.Library.Logging;
+using Ryan.Core.Intercepters;
 
 namespace Ryan.Core
 {
@@ -19,6 +21,8 @@ namespace Ryan.Core
             builder.RegisterInstance(LogProvider.GetLogger("Logger_Error")).Named<ILog>("Error").SingleInstance();
             builder.RegisterInstance(LogProvider.GetLogger("Logger_Info")).Named<ILog>("Info").SingleInstance();
 
+            builder.RegisterType<LogIntercepter>();
+
             builder.RegisterType<WebAppTypeFinder>().As<ITypeFinder>().SingleInstance();
             builder.Update(_containerManager);
             builder = new ContainerBuilder();
@@ -30,11 +34,10 @@ namespace Ryan.Core
             {
                 builder.RegisterType(type).AsImplementedInterfaces().SingleInstance();
             }
-
             types = typeFinder.FindClassesEndWith(new[] {"Application"});
             foreach (var type in types)
             {
-                builder.RegisterType(type).SingleInstance();
+                builder.RegisterType(type).EnableClassInterceptors().SingleInstance(); ;
             }
             builder.Update(_containerManager);
         }

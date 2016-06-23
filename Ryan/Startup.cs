@@ -14,8 +14,6 @@ namespace Ryan
             WebApiConfig.Register(config);
             ContainerRegister(config, app);
             app.UseWebApi(config);
-
-            "日志启动".LogInfo();
         }
     }
 }
