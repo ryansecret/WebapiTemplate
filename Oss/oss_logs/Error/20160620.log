@@ -1,0 +1,90 @@
+﻿tag : sign
+message : 正确值应该为：ab3f920bac193c134600f53d3bf408a0
+datetime : 
+2016/6/20 9:29:37=====================================================
+tag : http://localhost:9806/api/Order/Select
+message : 值不能为 null。
+参数名: serializerSettings   在 System.Web.Http.Results.JsonResult`1..ctor(T content, JsonSerializerSettings serializerSettings, Encoding encoding, IDependencyProvider dependencies)
+   在 System.Web.Http.Results.JsonResult`1..ctor(T content, JsonSerializerSettings serializerSettings, Encoding encoding, HttpRequestMessage request)
+   在 Oss.Utility.ApiAuthorityFilter.<AuthenticateAsync>d__4.MoveNext() 位置 C:\Oss\Oss\Utility\ApiAuthorityFilter.cs:行号 48
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+datetime : 
+2016/6/20 9:29:37=====================================================
+tag : sign
+message : 正确值应该为：26c362fe0a83b41e012fec34e9117824
+datetime : 
+2016/6/20 9:29:58=====================================================
+tag : http://localhost:9806/api/Order/Select
+message : 值不能为 null。
+参数名: serializerSettings   在 System.Web.Http.Results.JsonResult`1..ctor(T content, JsonSerializerSettings serializerSettings, Encoding encoding, IDependencyProvider dependencies)
+   在 System.Web.Http.Results.JsonResult`1..ctor(T content, JsonSerializerSettings serializerSettings, Encoding encoding, HttpRequestMessage request)
+   在 Oss.Utility.ApiAuthorityFilter.<AuthenticateAsync>d__4.MoveNext() 位置 C:\Oss\Oss\Utility\ApiAuthorityFilter.cs:行号 48
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+datetime : 
+2016/6/20 9:29:58=====================================================
+tag : GetRestaurantStatistic
+message : System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   在 System.SZArrayHelper.get_Item[T](Int32 index)
+   在 Oss.Application.Application.OrderApplication.<>c.<GetRestaurantStatistic>b__8_0(OrderSum d) 位置 C:\Oss\Oss.Application\Application\OrderApplication.cs:行号 366
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Oss.Application.Application.OrderApplication.GetRestaurantStatistic(QueryParamInfo paramInfo) 位置 C:\Oss\Oss.Application\Application\OrderApplication.cs:行号 352
+datetime : 
+2016/6/20 9:33:01=====================================================
+tag : http://localhost:9806/api/Order/Select
+message : 索引超出范围。必须为非负值并小于集合大小。
+参数名: index   在 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   在 System.SZArrayHelper.get_Item[T](Int32 index)
+   在 Oss.Application.Application.OrderApplication.<>c.<GetRestaurantStatistic>b__8_0(OrderSum d) 位置 C:\Oss\Oss.Application\Application\OrderApplication.cs:行号 366
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Oss.Application.Application.OrderApplication.GetRestaurantStatistic(QueryParamInfo paramInfo) 位置 C:\Oss\Oss.Application\Application\OrderApplication.cs:行号 383
+   在 Oss.Controllers.Order.OrderController.Select(QueryParamInfo query) 位置 C:\Oss\Oss\Controllers\Order\OrderController.cs:行号 26
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+datetime : 
+2016/6/20 9:33:24=====================================================

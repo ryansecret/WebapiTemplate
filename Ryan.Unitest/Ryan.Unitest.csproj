@@ -104,10 +104,6 @@
       <Project>{94247a44-7ccf-490a-9e20-084406b751c8}</Project>
       <Name>Ryan.Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ryan\Ryan.csproj">
-      <Project>{8fb7a9ec-0e29-4cff-8229-10a493ae6b3b}</Project>
-      <Name>Ryan</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />

@@ -1,0 +1,16 @@
+﻿tag : tewt
+message : test
+datetime : 
+2016/6/15 17:55:58=====================================================
+tag : tewt
+message : test
+datetime : 
+2016/6/15 18:57:43=====================================================
+tag : GetRestaurantStatistic 参数
+message : {"PageIndex":1,"PageSize":20,"RestaurantId":null,"RestaurantName":null,"ProvinceName":null,"CityName":null,"RegionName":null,"StartTime":null,"EndTime":null,"HistoryCount":null,"TodayCount":null}
+datetime : 
+2016/6/15 18:58:32=====================================================
+tag : GetRestaurantStatistic 转换后参数
+message : {"PageIndex":1,"PageSize":20,"RestaurantId":null,"RestaurantName":null,"ProvinceName":null,"CityName":null,"RegionName":null,"StartTime":null,"EndTime":null,"HistoryCount":null,"TodayCount":null,"Limit":20,"Offset":0}
+datetime : 
+2016/6/15 18:58:32=====================================================

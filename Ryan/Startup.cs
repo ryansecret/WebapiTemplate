@@ -9,12 +9,7 @@ namespace Ryan
     {
         public void Configuration(IAppBuilder app)
         {
-            var config = new HttpConfiguration();
-
-            config.Filters.Add(new ErrorAttribute());
-            WebApiConfig.Register(config);
-            ContainerRegister(config, app);
-            app.UseWebApi(config);
+            GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
 }
