@@ -2,14 +2,10 @@
 using System.Web.Http;
 using Autofac;
 using Autofac.Extras.CommonServiceLocator;
-using Autofac.Extras.DynamicProxy2;
 using Autofac.Integration.WebApi;
 using Microsoft.Practices.ServiceLocation;
 using Owin;
-using Ryan.Application;
-using Ryan.Controller;
 using Ryan.Core;
-using Ryan.Core.Intercepters;
 
 namespace Ryan
 {
@@ -29,10 +25,9 @@ namespace Ryan
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
             var sl = new AutofacServiceLocator(container);
             ServiceLocator.SetLocatorProvider(() => sl);
-           
+
             var workEngine = new RyanWorkEngine(container);
             workEngine.Initialize();
-            
         }
     }
 }

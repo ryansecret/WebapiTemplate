@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
@@ -28,7 +29,10 @@ namespace Ryan.Utility
         /// <returns></returns>
         public async Task AuthenticateAsync(HttpAuthenticationContext context, CancellationToken cancellationToken)
         {
-
+            if (context.Request.Method==HttpMethod.Get)
+            {
+                return;
+            }
             if (!context.Request.Headers.Contains("sign"))
             {
                 
@@ -42,7 +46,6 @@ namespace Ryan.Utility
 
                 if (sign != HashPassWord(conent))
                 {
-                     
                     context.ErrorResult = new JsonResult<object>(new { ResultStatus = 500, Message = "签名不正确" },
                         null, Encoding.UTF8, context.Request);
                 }

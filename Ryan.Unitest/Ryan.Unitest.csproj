@@ -79,6 +79,7 @@
     <Compile Include="Appication\ApplicationTestBase.cs" />
     <Compile Include="Appication\RyanAppliction.cs" />
     <Compile Include="Model\Ball.cs" />
+    <Compile Include="Other\Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\RyanRepository.cs" />
   </ItemGroup>
@@ -108,7 +109,9 @@
       <Name>Ryan</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
