@@ -1,7 +1,6 @@
 ﻿using FluentAssertions;
 using NSubstitute;
 using NUnit.Framework;
-using Ryan.Controller;
 using Ryan.DomainModel.Ryan;
 
 namespace Ryan.Unitest.Repository

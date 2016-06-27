@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using FluentAssertions;
 using NUnit.Framework;
-using Ryan.Utility;
+
 
 namespace Ryan.Unitest.Other
 {
