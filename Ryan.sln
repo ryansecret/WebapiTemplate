@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sites", "Sites", "{36619F0B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Unitest", "Ryan.Unitest\Ryan.Unitest.csproj", "{516A373A-B3E7-4FE3-BB18-77E478F7E44C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RyanWeb", "RyanWeb\RyanWeb.csproj", "{41C5AF65-8233-4CFF-BB92-4009D9E1A0A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,11 +49,16 @@ Global
 		{516A373A-B3E7-4FE3-BB18-77E478F7E44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{516A373A-B3E7-4FE3-BB18-77E478F7E44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{516A373A-B3E7-4FE3-BB18-77E478F7E44C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C5AF65-8233-4CFF-BB92-4009D9E1A0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C5AF65-8233-4CFF-BB92-4009D9E1A0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C5AF65-8233-4CFF-BB92-4009D9E1A0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C5AF65-8233-4CFF-BB92-4009D9E1A0A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B} = {36619F0B-8337-4EBE-9A43-007640D603F7}
+		{41C5AF65-8233-4CFF-BB92-4009D9E1A0A2} = {36619F0B-8337-4EBE-9A43-007640D603F7}
 	EndGlobalSection
 EndGlobal

@@ -12,7 +12,6 @@ namespace Ryan
         {
             var config = new HttpConfiguration();
 
-            config.Filters.Add(new ErrorAttribute());
             WebApiConfig.Register(config);
             ContainerRegister(config, app);
             app.UseWebApi(config);

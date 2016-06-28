@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Web.Cors;
 using System.Web.Http;
+using System.Web.Http.Cors;
+using System.Web.Http.Results;
 using Autofac.Extras.DynamicProxy2;
 using Autofac.Integration.WebApi;
 using Microsoft.Practices.ServiceLocation;
@@ -34,8 +38,10 @@ namespace Ryan.Controller
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+                return new UnauthorizedResult(new [] {new AuthenticationHeaderValue("ryan")},Request);
             }
             return Json(ball);
         }
+
     }
 }

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8FB7A9EC-0E29-4CFF-8229-10A493AE6B3B}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ryan</RootNamespace>
     <AssemblyName>Ryan</AssemblyName>
@@ -126,18 +126,6 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ScriptCs.Contracts, Version=0.16.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ScriptCs.Contracts.0.16.1\lib\net45\ScriptCs.Contracts.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ScriptCs.Core, Version=0.16.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ScriptCs.Core.0.16.1\lib\net45\ScriptCs.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ScriptCs.Engine.Roslyn, Version=0.16.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ScriptCs.Engine.Roslyn.0.16.1\lib\net45\ScriptCs.Engine.Roslyn.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable, Version=1.1.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\ScriptCs.Engine.Roslyn.0.16.1\lib\net45\System.Collections.Immutable.dll</HintPath>
@@ -157,9 +145,17 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -183,14 +179,20 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Utility\ActionFilters\LoggingActionFilter .cs" />
     <Compile Include="Utility\ApiAuthorityFilter.cs" />
+    <Compile Include="Utility\Cors\CorsPolicyFactory .cs" />
+    <Compile Include="Utility\Cors\RyanCorsPolicyAttribute .cs" />
     <Compile Include="Utility\ErrorAttribute.cs" />
+    <Compile Include="Utility\ModelBinders\MvcActionValueBinder.cs" />
+    <Compile Include="Utility\ModelBinders\MvcStyleBindingAttribute.cs" />
     <Compile Include="Utility\WebClientEx.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\ConfigFiles\Public\Log4Net.config">
       <Link>Log4Net.config</Link>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="AppSettings.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
