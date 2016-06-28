@@ -3,7 +3,9 @@ using Microsoft.Practices.ServiceLocation;
 using MyTested.WebApi;
 using NUnit.Framework;
 using Ryan.Application;
+using Ryan.Application.Models;
 using Ryan.Controller;
+
 
 namespace Ryan.Unitest.Controller
 {
@@ -27,6 +29,17 @@ namespace Ryan.Unitest.Controller
                 .Json()
                 .WithResponseModelOfType<string>()
                 .Passing(d => d == "Hello from ryan");
+        }
+        [Test]
+        public void PostTest()
+        {
+            _controller.Calling(d => d.KickBall(new Ball() {Name = "ryan"}))
+                .ShouldHave()
+                .ActionAttributes(attrs => attrs
+                    .RestrictingForRequestsWithMethod(HttpMethod.Post)
+                    .AndAlso()
+                     ).AndAlso().ShouldReturn().BadRequest()
+                .WithModelStateFor<Ball>().ContainingModelStateErrorFor(d=>d.Color);
         }
     }
 }

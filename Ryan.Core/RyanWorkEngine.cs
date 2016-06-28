@@ -45,6 +45,7 @@ namespace Ryan.Core
     {
         protected override void Load(ContainerBuilder builder)
         {
+            
             builder.RegisterInstance(LogProvider.GetLogger("Logger_Error")).Named<ILog>("Error").SingleInstance();
             builder.RegisterInstance(LogProvider.GetLogger("Logger_Info")).Named<ILog>("Info").SingleInstance();
             

@@ -7,6 +7,7 @@ using Autofac.Integration.WebApi;
 using Microsoft.Practices.ServiceLocation;
 using Newtonsoft.Json;
 using Ryan.Application;
+using Ryan.Application.Models;
 using Ryan.Core.Intercepters;
 using Ryan.Utility;
 
@@ -26,6 +27,15 @@ namespace Ryan.Controller
         public IHttpActionResult Hello()
         {
             return Json(_ryanApplication.Hello());
+        }
+        [HttpPost]
+        public IHttpActionResult KickBall(Ball ball)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            return Json(ball);
         }
     }
 }
