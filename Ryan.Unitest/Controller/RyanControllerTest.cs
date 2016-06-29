@@ -26,7 +26,7 @@ namespace Ryan.Unitest.Controller
 
             _controller.Calling(d => d.Hello())
                 .ShouldReturn()
-                .Json()
+                .Ok()
                 .WithResponseModelOfType<string>()
                 .Passing(d => d == "Hello from ryan");
         }

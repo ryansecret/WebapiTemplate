@@ -16,7 +16,7 @@ namespace Ryan.Application
             _ryanRepository = ryanRepository;
         }
 
-        public virtual string Hello()
+        public   virtual string Hello()
         {
            
             return _ryanRepository.Hello();

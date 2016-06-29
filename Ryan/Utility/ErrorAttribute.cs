@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Text;
 using System.Web.Http.Filters;
+using System.Web.Http.Results;
 using Newtonsoft.Json;
 using Ryan.Core.Log;
 
@@ -22,7 +23,7 @@ namespace Ryan.Utility
            
             
 #if DEBUG
-             
+            
             actionExecutedContext.Response = new HttpResponseMessage
             {
                 Content = new StringContent(actionExecutedContext.Exception.ToString(), Encoding.UTF8, "application/json"),

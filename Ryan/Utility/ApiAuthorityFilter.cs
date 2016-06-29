@@ -39,7 +39,7 @@ namespace Ryan.Utility
             if (!context.Request.Headers.Contains("sign"))
             {
                 
-                context.ErrorResult = new JsonResult<object> (new { ResultStatus = 500, Message = "签名不正确" }, null,
+                context.ErrorResult = new JsonResult<object> (new { ResultStatus = 400, Message = "签名不正确" }, null,
                     Encoding.UTF8, context.Request);
             }
             else
@@ -49,7 +49,7 @@ namespace Ryan.Utility
 
                 if (sign != HashPassWord(conent))
                 {
-                    context.ErrorResult = new JsonResult<object>(new { ResultStatus = 500, Message = "签名不正确" },
+                    context.ErrorResult = new JsonResult<object>(new { ResultStatus = 400, Message = "签名不正确" },
                         null, Encoding.UTF8, context.Request);
                 }
             }

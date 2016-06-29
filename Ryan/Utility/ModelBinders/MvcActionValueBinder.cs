@@ -71,8 +71,6 @@ namespace Ryan.Utility.ModelBinders
                             IValueProvider vp = new NameValuePairsValueProvider(fd, CultureInfo.InvariantCulture);
                             request.Properties.Add(Key, vp);
                         }
-                    
-                   
                 }
  
                 return base.ExecuteBindingAsync(actionContext, cancellationToken);

@@ -30,17 +30,17 @@ namespace Ryan.Controller
         [HttpGet]
         public IHttpActionResult Hello()
         {
-            return Json(_ryanApplication.Hello());
+            return Ok(_ryanApplication.Hello());
         }
         [HttpPost]
         public IHttpActionResult KickBall(Ball ball)
         {
             if (!ModelState.IsValid)
             {
+                
                 return BadRequest(ModelState);
-                return new UnauthorizedResult(new [] {new AuthenticationHeaderValue("ryan")},Request);
             }
-            return Json(ball);
+            return Ok(ball);
         }
 
     }
