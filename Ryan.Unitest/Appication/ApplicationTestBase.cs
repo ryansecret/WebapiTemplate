@@ -1,4 +1,5 @@
-﻿using Autofac;
+﻿using System.IO;
+using Autofac;
 using Autofac.Extras.CommonServiceLocator;
 using Microsoft.Practices.ServiceLocation;
 using NUnit.Framework;
@@ -11,6 +12,7 @@ namespace Ryan.Unitest.Appication
         [SetUp]
         public void PreInital()
         {
+            
             ContainerBuilder containerBuilder = new ContainerBuilder();
             var container = containerBuilder.Build();
             var sl = new AutofacServiceLocator(container);

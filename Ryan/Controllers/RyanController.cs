@@ -4,8 +4,7 @@ using Ryan.Application.Models;
 
 namespace Ryan.Controllers
 {
-    
-    
+
    
     public class RyanController : BaseController
     {
