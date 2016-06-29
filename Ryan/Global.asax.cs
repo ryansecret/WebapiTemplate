@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
- 
 
-namespace Oss
+namespace Ryan
 {
     /// <summary>
     /// </summary>
@@ -22,8 +20,6 @@ namespace Oss
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             
         }
-
-       
-    
+ 
     }
 }

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Ryan 的规则" Description="Ryan.csproj 的代码分析规则。" ToolsVersion="14.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1001" Action="Warning" />
+    <Rule Id="CA1821" Action="Warning" />
+    <Rule Id="CA2213" Action="Warning" />
+    <Rule Id="CA2231" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+    <Rule Id="CS1591" Action="None" />
+  </Rules>
+</RuleSet>

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Oss
+namespace Ryan
 {
     /// <summary>
     ///     过滤器配置

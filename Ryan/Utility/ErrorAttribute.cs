@@ -2,8 +2,6 @@
 using System.Net.Http;
 using System.Text;
 using System.Web.Http.Filters;
-using Newtonsoft.Json;
-using Ryan.Core.Log;
 
 namespace Ryan.Utility
 {

@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sites", "Sites", "{36619F0B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.Unitest", "Ryan.Unitest\Ryan.Unitest.csproj", "{516A373A-B3E7-4FE3-BB18-77E478F7E44C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan", "Oss\Ryan.csproj", "{FB2ECB26-6B3C-4CA5-95EA-C78C1AB8C6D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan", "Ryan\Ryan.csproj", "{FB2ECB26-6B3C-4CA5-95EA-C78C1AB8C6D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
