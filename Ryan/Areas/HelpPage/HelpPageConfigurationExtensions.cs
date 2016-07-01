@@ -30,7 +30,11 @@ namespace Ryan.Areas.HelpPage
         {
             config.Services.Replace(typeof(IDocumentationProvider), documentationProvider);
         }
+        public static void SetModelDocmentProvider(this HttpConfiguration conig, IModelDocumentationProvider provider)
+        {
+            conig.Properties.GetOrAdd(typeof(IModelDocumentationProvider), provider);
 
+        }
         /// <summary>
         /// Sets the objects that will be used by the formatters to produce sample requests/responses.
         /// </summary>
@@ -241,7 +245,7 @@ namespace Ryan.Areas.HelpPage
             {
                 ApiDescription = apiDescription,
             };
-
+            
             ModelDescriptionGenerator modelGenerator = config.GetModelDescriptionGenerator();
             HelpPageSampleGenerator sampleGenerator = config.GetHelpPageSampleGenerator();
             GenerateUriParameters(apiModel, modelGenerator);

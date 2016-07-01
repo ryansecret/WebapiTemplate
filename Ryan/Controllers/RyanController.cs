@@ -30,6 +30,11 @@ namespace Ryan.Controllers
                 return BadRequest(ModelState);
             }
             return Ok(ball);
+        } 
+        [HttpPost]
+        public Ball RyanTest([FromBody]string g)
+        {
+            return new Ball() {Color = "ryan",Name = "chen"};
         }
     }
 }

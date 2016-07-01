@@ -2,7 +2,9 @@
 // package to your project.
 ////#define Handle_PageResultOfT
 
+using System;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using System.Net.Http.Headers;
 using System.Web.Http;
 using Ryan.Areas.HelpPage.SampleGeneration;
@@ -53,7 +55,9 @@ namespace Ryan.Areas.HelpPage.App_Start
             config.SetSampleForMediaType(
                 new TextSample("Binary JSON content. See http://bsonspec.org for details."),
                 new MediaTypeHeaderValue("application/bson"));
-           // config.SetDocumentationProvider(new XmlDocumentationProvider(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin\\WebApiandCache.XML")));
+            config.SetDocumentationProvider(new XmlDocumentationProvider(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin\\SnOss.xml")));
+           // config.SetModelDocmentProvider(new XmlDocumentationProvider(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin\\SnOss.Application.XML")));
+            // config.SetDocumentationProvider(new XmlDocumentationProvider(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin\\WebApiandCache.XML")));
             //config.SetDocumentationProvider(new XmlDocumentationProvider());
             //// Uncomment the following to use "[0]=foo&[1]=bar" directly as the sample for all actions that support form URL encoded format
             //// and have IEnumerable<string> as the body parameter or return type.

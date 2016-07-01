@@ -92,8 +92,8 @@ namespace Ryan.Areas.HelpPage.ModelDescriptions
             {
                 throw new ArgumentNullException("config");
             }
-
-            _documentationProvider = new Lazy<IModelDocumentationProvider>(() => config.Services.GetDocumentationProvider() as IModelDocumentationProvider);
+            _documentationProvider = new Lazy<IModelDocumentationProvider>(() => config.Properties[typeof(IModelDocumentationProvider)] as IModelDocumentationProvider);
+ 
             GeneratedModels = new Dictionary<string, ModelDescription>(StringComparer.OrdinalIgnoreCase);
         }
 

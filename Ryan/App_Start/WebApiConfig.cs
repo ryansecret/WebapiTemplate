@@ -18,7 +18,7 @@ namespace Ryan
             config.MapHttpAttributeRoutes();
             config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{action}");
             config.Filters.Add(new ErrorAttribute());
-            config.Filters.Add(new ApiAuthorityFilter());
+            //config.Filters.Add(new ApiAuthorityFilter());
 
             var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log4Net.config");
             XmlConfigurator.ConfigureAndWatch(new FileInfo(path));

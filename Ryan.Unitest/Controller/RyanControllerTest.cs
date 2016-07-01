@@ -42,5 +42,10 @@ namespace Ryan.Unitest.Controller
                      ).AndAlso().ShouldReturn().BadRequest()
                 .WithModelStateFor<Ball>().ContainingModelStateErrorFor(d=>d.Color);
         }
+        [Test]
+        public void RyanTest()
+        {
+            _controller.Calling(d => d.RyanTest("g")).ShouldReturn().ResultOfType<Ball>().Passing(d=>d.Name=="chen");
+        }
     }
 }
