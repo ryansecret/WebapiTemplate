@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using System.Net.Http;
+using System.Web.Http;
 using Ryan.Application;
 using Ryan.Application.Models;
 
@@ -18,6 +19,7 @@ namespace Ryan.Controllers
         [HttpGet]
         public IHttpActionResult Hello()
         {
+             
             return Json(_ryanApplication.Hello());
         }
 
