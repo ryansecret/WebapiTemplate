@@ -4,6 +4,7 @@ using System.Data.Entity;
  
 using MySql.Data.Entity;
 using MySql.Data.MySqlClient;
+using Ryan.DomainModel.Ryan;
 
 namespace MigrationsDemo
 {
@@ -16,6 +17,8 @@ namespace MigrationsDemo
             
         }
         public DbSet<Blog> Blogs { get; set; }
+
+        public DbSet<BallEntity> Ball { get; set; }
     }
 
     public class Blog

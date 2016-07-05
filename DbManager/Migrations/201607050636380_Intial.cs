@@ -8,6 +8,16 @@ namespace MigrationsDemo.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.Ball",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(maxLength: 150, storeType: "nvarchar"),
+                        Color = c.String(maxLength: 150, storeType: "nvarchar"),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.Blogs",
                 c => new
                     {
@@ -37,6 +47,7 @@ namespace MigrationsDemo.Migrations
             DropIndex("dbo.Posts", new[] { "BlogId" });
             DropTable("dbo.Posts");
             DropTable("dbo.Blogs");
+            DropTable("dbo.Ball");
         }
     }
 }

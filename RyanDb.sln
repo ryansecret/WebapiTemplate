@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationsDemo", "DbManager\MigrationsDemo.csproj", "{C8E9286F-1F11-4BA7-9A7F-58AF3CB46CC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RyanDb", "DbManager\RyanDb.csproj", "{C8E9286F-1F11-4BA7-9A7F-58AF3CB46CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryan.DomainModel", "Ryan.Model\Ryan.DomainModel.csproj", "{1768DB3D-1D73-4FFA-B459-0134E8D6F638}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C8E9286F-1F11-4BA7-9A7F-58AF3CB46CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8E9286F-1F11-4BA7-9A7F-58AF3CB46CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E9286F-1F11-4BA7-9A7F-58AF3CB46CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1768DB3D-1D73-4FFA-B459-0134E8D6F638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

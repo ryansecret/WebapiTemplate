@@ -7,8 +7,8 @@
     <ProjectGuid>{C8E9286F-1F11-4BA7-9A7F-58AF3CB46CC1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MigrationsDemo</RootNamespace>
-    <AssemblyName>MigrationsDemo</AssemblyName>
+    <RootNamespace>RyanDb</RootNamespace>
+    <AssemblyName>RyanDb</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -61,6 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlogContext .cs" />
+    <Compile Include="Migrations\201607050636380_Intial.cs" />
+    <Compile Include="Migrations\201607050636380_Intial.Designer.cs">
+      <DependentUpon>201607050636380_Intial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +75,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ryan.Model\Ryan.DomainModel.csproj">
+      <Project>{1768db3d-1d73-4ffa-b459-0134e8d6f638}</Project>
+      <Name>Ryan.DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607050636380_Intial.resx">
+      <DependentUpon>201607050636380_Intial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
