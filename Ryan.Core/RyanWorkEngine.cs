@@ -20,7 +20,7 @@ namespace Ryan.Core
             var builder = new ContainerBuilder();
 
             builder.RegisterModule<LogModule>();
-                 
+                  
             builder.RegisterType<WebAppTypeFinder>().As<ITypeFinder>().SingleInstance();
             builder.Update(_containerManager);
             builder = new ContainerBuilder();

@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json.Converters;
-
+ 
 namespace Ryan.Core.Utility
 {
     /// <summary>
@@ -15,4 +15,6 @@ namespace Ryan.Core.Utility
             this.DateTimeFormat = "yyyy-MM-dd HH:mm:ss";
         }
     }
+     
+   
 }

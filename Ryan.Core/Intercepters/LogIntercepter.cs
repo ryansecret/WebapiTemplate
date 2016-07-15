@@ -10,6 +10,7 @@ namespace Ryan.Core.Intercepters
         {
              
             invocation.Proceed();
+            
             if (!invocation.Method.IsConstructor&&invocation.Method.IsPublic)
             {
                 $"方法{invocation.Method.Name}--参数：{ string.Join(", ", invocation.Arguments.Select(a => (a ?? "").ToString()).ToArray())},结果：{invocation.ReturnValue}".LogInfo();
