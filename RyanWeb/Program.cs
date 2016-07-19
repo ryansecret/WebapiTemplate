@@ -4,8 +4,11 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using log4net;
 using Microsoft.Owin.Hosting;
+using Microsoft.Owin.Logging;
 using Ryan;
+using Ryan.Controller;
 
 namespace RyanWeb
 {
@@ -17,10 +20,10 @@ namespace RyanWeb
             Console.WriteLine("Started successfully,address:");
             Console.WriteLine(baseUrl);
             var server = WebApp.Start<Startup>(new StartOptions(baseUrl));
-
+           
             Console.WriteLine("Press Enter to exit");
             Console.ReadLine();
-
+            
             Console.WriteLine("Terminating.");
             server.Dispose();
         }
