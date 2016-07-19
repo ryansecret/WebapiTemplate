@@ -17,6 +17,7 @@ namespace RyanWeb
             Console.WriteLine("Started successfully,address:");
             Console.WriteLine(baseUrl);
             var server = WebApp.Start<Startup>(new StartOptions(baseUrl));
+
             Console.WriteLine("Press Enter to exit");
             Console.ReadLine();
 

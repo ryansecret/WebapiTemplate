@@ -194,6 +194,7 @@
   <ItemGroup>
     <None Include="..\ConfigFiles\Public\Log4Net.config">
       <Link>Log4Net.config</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
