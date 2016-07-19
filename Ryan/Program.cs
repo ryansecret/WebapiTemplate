@@ -9,6 +9,7 @@ namespace Ryan
         private static void Main(string[] args)
         {
             var baseUrl = ConfigurationManager.AppSettings["ServiceAddress"];
+
             Console.WriteLine("Started successfully,address:");
             Console.WriteLine(baseUrl);
             var server = WebApp.Start<Startup>(new StartOptions(baseUrl));
